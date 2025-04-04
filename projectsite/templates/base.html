@@ -2,62 +2,26 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-{% load static %}
-
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}PSUSphere{% endblock %}</title>
 
-    <!-- Link to Stylesheets -->
+    <!-- Linking the static CSS files -->
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/ready.css' %}">
     <link rel="stylesheet" href="{% static 'css/demo.css' %}">
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about/">About</a></li>
-                <li><a href="/contact/">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Main Panel -->
     <div class="main-panel">
-        {% block content %}
-        <!-- Content will be inserted here -->
-        {% endblock %}
+        <div class="content">
+            {% block content %}
+            <!-- Homepage content will go here -->
+            {% endblock %}
+        </div>
     </div>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2025 PSUSphere. All rights reserved.</p>
-    </footer>
-
-    <!-- Script Files -->
-    <script src="{% static 'js/core/jquery.3.2.1.min.js' %}"></script>
-    <script src="{% static 'js/plugin/bootstrap.min.js' %}"></script>
-    <script src="{% static 'js/ready.min.js' %}"></script>
-</body>
-</html>
-scale=1.0">
-    <title>{% block title %}PSUSphere{% endblock %}</title>
-
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'css/ready.css' %}">
-    <link rel="stylesheet" href="{% static 'css/demo.css' %}">
-
-    <!-- JS Files -->
+    <!-- Linking the static JS files -->
     <script src="{% static 'js/core/jquery.3.2.1.min.js' %}"></script>
     <script src="{% static 'js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js' %}"></script>
     <script src="{% static 'js/core/popper.min.js' %}"></script>
@@ -71,14 +35,5 @@ scale=1.0">
     <script src="{% static 'js/plugin/chart-circle/circles.min.js' %}"></script>
     <script src="{% static 'js/plugin/jquery-scrollbar/jquery.scrollbar.min.js' %}"></script>
     <script src="{% static 'js/ready.min.js' %}"></script>
-</head>
-
-<body>
-    <div class="container">
-        {% block content %}
-        <!-- Content goes here -->
-        {% endblock %}
-    </div>
 </body>
-
 </html>
