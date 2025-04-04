@@ -5,7 +5,51 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}PSUSphere{% endblock %}</title>
+
+    <!-- Link to Stylesheets -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/ready.css' %}">
+    <link rel="stylesheet" href="{% static 'css/demo.css' %}">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/contact/">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Panel -->
+    <div class="main-panel">
+        {% block content %}
+        <!-- Content will be inserted here -->
+        {% endblock %}
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 PSUSphere. All rights reserved.</p>
+    </footer>
+
+    <!-- Script Files -->
+    <script src="{% static 'js/core/jquery.3.2.1.min.js' %}"></script>
+    <script src="{% static 'js/plugin/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/ready.min.js' %}"></script>
+</body>
+</html>
+scale=1.0">
     <title>{% block title %}PSUSphere{% endblock %}</title>
 
     <!-- CSS Files -->
