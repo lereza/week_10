@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'studentorg',
+    "widget_tweaks", 
 ]
 
 MIDDLEWARE = [
