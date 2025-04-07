@@ -1,8 +1,0 @@
-# Ignore virtual environment files
-psuenv/
-
-# Optionally, ignore specific package folders if they appear inside your virtual environment
-psuenv/Lib/site-packages/MySQLdb/
-psuenv/Lib/site-packages/django_widget_tweaks-1.5.0.dist-info/
-psuenv/Lib/site-packages/mysqlclient-2.2.7.dist-info/
-psuenv/Lib/site-packages/widget_tweaks/
