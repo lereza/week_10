@@ -59,7 +59,7 @@ WSGI_APPLICATION = 'projectsite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'nLerezaa$default_db',  # Replace with your database name
+        'NAME': 'Lerezaa$default_db',  # Replace with your database name
         'USER': 'Lerezaa',               # Replace with your PythonAnywhere username
         'PASSWORD': 'castillas123',   # Replace with your actual database password
         'HOST': 'Lerezaa.mysql.pythonanywhere-services.com',
